@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Responsive enterprise dashboard for RabTech Academy Task 04">
+<title>AccessBoard | Responsive Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">A</span><span>AccessBoard</span></div>
+  <nav aria-label="Main navigation">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#analytics">Analytics</a>
+    <a href="#activity">Activity</a>
+  </nav>
+  <button id="themeToggle" class="theme-btn" type="button">🌙 Dark</button>
+</header>
+
+<main id="dashboard" class="container">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">RABTECH ACADEMY • TASK 04</p>
+      <h1>Responsive Design Dashboard</h1>
+      <p class="hero-text">A modern mobile-first dashboard built with CSS design tokens, responsive Grid, glassmorphism, soft shadows and light/dark theme variables.</p>
+    </div>
+    <div class="hero-badge">● System Online</div>
+  </section>
+
+  <section class="stats-grid" aria-label="Key statistics">
+    <article class="stat-card accent-one">
+      <div class="icon">✓</div><p>Accessibility</p><strong>92%</strong><span>+6.4% this month</span>
+    </article>
+    <article class="stat-card accent-two">
+      <div class="icon">!</div><p>Open Issues</p><strong>08</strong><span>3 high priority</span>
+    </article>
+    <article class="stat-card accent-three">
+      <div class="icon">♟</div><p>Active Users</p><strong>1,248</strong><span>+12.8% this month</span>
+    </article>
+    <article class="stat-card accent-four">
+      <div class="icon">▣</div><p>Reports</p><strong>24</strong><span>4 new reports</span>
+    </article>
+  </section>
+
+  <section id="analytics" class="content-grid">
+    <article class="panel chart-panel">
+      <div class="panel-head"><div><h2>Performance overview</h2><p>Monthly accessibility score</p></div><span class="pill">2026</span></div>
+      <div class="chart" aria-label="Illustrative performance chart">
+        <div class="bars"><i style="height:45%"></i><i style="height:58%"></i><i style="height:52%"></i><i style="height:70%"></i><i style="height:64%"></i><i style="height:82%"></i><i style="height:92%"></i></div>
+        <div class="months"><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Now</span></div>
+      </div>
+    </article>
+
+    <article class="panel">
+      <div class="panel-head"><div><h2>Goal progress</h2><p>Quarterly targets</p></div></div>
+      <div class="progress-item"><div><span>Accessibility</span><b>92%</b></div><div class="progress"><span style="width:92%"></span></div></div>
+      <div class="progress-item"><div><span>Performance</span><b>78%</b></div><div class="progress"><span style="width:78%"></span></div></div>
+      <div class="progress-item"><div><span>Documentation</span><b>86%</b></div><div class="progress"><span style="width:86%"></span></div></div>
+    </article>
+  </section>
+
+  <section id="activity" class="panel activity">
+    <div class="panel-head"><div><h2>Recent activity</h2><p>Latest dashboard events</p></div><button class="outline-btn" type="button">View all</button></div>
+    <div class="activity-row"><span class="activity-icon">✓</span><div><b>Accessibility audit completed</b><small>Navigation audit • 2 hours ago</small></div><strong class="success">Passed</strong></div>
+    <div class="activity-row"><span class="activity-icon">↗</span><div><b>New report generated</b><small>Monthly report • 5 hours ago</small></div><strong class="info">New</strong></div>
+    <div class="activity-row"><span class="activity-icon">!</span><div><b>Form accessibility needs review</b><small>Forms module • Yesterday</small></div><strong class="warning">Review</strong></div>
+  </section>
+
+  <section class="responsive-demo panel">
+    <div class="panel-head"><div><h2>Responsive demo</h2><p>Resize the browser to verify the breakpoints.</p></div></div>
+    <div class="breakpoint-grid">
+      <div><b>320px</b><span>1 column</span></div>
+      <div><b>768px</b><span>2 columns</span></div>
+      <div><b>1024px</b><span>3 columns</span></div>
+      <div><b>1440px</b><span>4 columns</span></div>
+    </div>
+  </section>
+</main>
+
+<footer><p>© 2026 AccessBoard • RabTech Academy Task 04</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
